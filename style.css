@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: monteserrat;
+    src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: monteserrat-regular;
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: roboto;
+    src: url(fonts/roboto/Roboto-Regular.ttf);
+  }
+
+.container{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    box-shadow: 0 5px 20px #494949;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.logo{
+    width: 10%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    width: 70%;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.menu ul li a{
+ display: inline-block;
+ text-decoration: none;
+ color: #494949;
+ font-family: roboto;
+ font-size: 17px;
+ font-weight: 400;
+
+}
+
+.menu ul li a i{
+    color: #214c8e;
+    font-size: 10px;
+}
+
+
+.signIn{
+    width: 10%;
+    text-align: right;
+}
+
+.signIn a{
+    text-decoration: none;
+    color: #494949;
+    padding-right: 15px;
+    font-family: roboto;
+   font-size: 17px;
+   font-weight: 400;
+}
+
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 80px 0 60px 0;
+    
+}
+
+.banner_content{
+    width: 48%;
+    
+}
+
+.banner_image{
+    width: 48%;
+}
+
+.banner_image img{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.banner_content h2{
+    font-family: monteserrat;
+    color: #494949;
+    font-size: 80px;
+    font-weight: 900;
+    padding-left: 25px;
+    
+}
+
+.banner_content span{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: monteserrat-regular;
+    color: #494949;
+    padding-left: 25px;
+
+    
+}
+
+.head{
+    padding-top: 40px;
+}
+
+.banner_content p{
+    font-family: lato;
+    color: #494949;
+    padding-top: 15px;
+    padding-left: 25px;
+    width: 90%;
+}
+
+.head_link{
+    font-family: monteserrat-regular;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    background-color: #e8630b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #e8630b;
+    margin: 25px 0 15px 25px;
+    cursor: pointer;
+}
+
+.banner_content a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.career_report{
+    width: 100%;
+    background-color: white;
+    border-radius: 35px 35px 0px 0px;
+    box-shadow: 10px 0 8px  #888888;
+    text-align: center;
+    background-image: url(images/bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    position: relative;
+    z-index: 999;
+}
+
+.career_head{
+    font-family: lato;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.career_head p::before{
+    position: absolute;
+    content: "\f10d";
+  font-family: "Fontawesome";
+left: -20px;
+  margin-right: 10px;
+  color: #494949;
+}
+
+.career_head p::after{
+    position: absolute;
+    content: "\f10e";
+  font-family: "Fontawesome";
+  float: left;
+  margin-right: 10px;
+  color: #494949;
+}
+
+.curve1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50px;
+}
+
+.career_box{
+    width: 80%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.career_image{
+    width: 40%;
+}
+
+.career_image img{
+    width: 100%;
+}
+
+.career_content{
+    width: 40%;
+    padding-top: 80px;
+}
+
+.career_content h2{
+    font-family: monteserrat;
+    color: #494949;
+    font-size: 30px;
+    text-align: center;
+}
+
+.career_content span{
+    font-family: monteserrat-regular;
+    color: #494949;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.career_content p{
+    font-family: lato;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.career_content span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 2px;
+    top: -10px;
+    left: 10px;
+    margin: 0 auto;
+    background-color: #1dd2e2;
+}
+
+.graph{
+    width: 50px;
+    height:50px;
+}
+
+.head_bar{
+    text-align: center;
+}
+
+.top{
+    width: 100%;
+    box-shadow: inset 5px 5px 30px #494949;
+}
+
+.curve2{
+    position: absolute; right:0; top: 101%; width: 40px;
+
+}
+
+.aptitude{
+    width:100%;
+    background-color: white;
+}
+
+.footer{
+    width: 100%;
+    background-image: url(images/bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.career_footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.career_footer span{
+    font-family: monteserrat-regular;
+    font-weight: 400;
+    color: #494949;
+    position: relative;
+    display: inline-block;
+
+}
+
+.career_footer span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 2px;
+    top: -10px;
+    left: 20px;
+    margin: 0 auto;
+    background-color: #1dd2e2;
+}
+
+.career_footer h2{
+    font-family:monteserrat;
+    font-size: 30px;
+    color: #494949;
+}
+
+.video{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video .iframe{
+  width: 40%;
+  /* height: 400px; */
+  margin-bottom: 20px;
+}
+
+.video .iframe P{
+    font-family: lato;
+    color: #494949;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
